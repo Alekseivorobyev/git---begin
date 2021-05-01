@@ -60,9 +60,6 @@ public class Basket {
         if (weight > 0.0){
             totalWeight = totalWeight + weight;
         }
-        if (weight > 0.0){
-            totalWeight = totalWeight + weight;
-        }
 
 
         items = items + "\n" + name + " - " +
