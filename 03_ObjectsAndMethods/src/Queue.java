@@ -1,22 +1,33 @@
 public class Queue
 {
- static Queue queue = new Queue();
- static int countQueue = 0;
+ public static int countQueue = 0;
+ static String buyers = " ";
+ public static void increaseCount(int count) {
+  Queue.countQueue = Queue.countQueue + count;
+ }
+ public Queue() {
+  increaseCount(1);
+  buyers = "Список покупателей:";
+ }
  public void addQueue(String name){
-  Queue queue = new Queue();
   countQueue++;
  }
  public void addQueue(String name, int numberPhone){addQueue(name);
-  Queue queue = new Queue();
   countQueue++;
  }
  public void addQueue(String name, int numberPhone, String iMail){addQueue(name, numberPhone);
-  Queue queue = new Queue();
   countQueue++;
+  buyers = buyers + countQueue + "\n" + name + ", " + "Номер телефона: " + numberPhone
+           + "Электронная почта" + iMail;
  }
  public void flush(){
-if (countQueue >= 10) return;
- }
+  if(countQueue <= 10) {
+   System.out.println(countQueue);
+  }
+  else {
+   return;
+  }
 
-}
+  }
+ }
 
