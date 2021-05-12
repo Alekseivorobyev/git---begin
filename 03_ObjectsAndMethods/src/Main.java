@@ -4,8 +4,9 @@ public class Main {
         Basket basket = new Basket();
         basket.add("Milk", 40,2);
         basket.print("Milk");
-    Queue queue = new Queue();
-    queue.addQueue("Aleksei Vorobyev",8908,"alekseivorobyev@gmail.com");}
+
+
+        }
 
 }
 
